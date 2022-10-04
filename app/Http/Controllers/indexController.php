@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function __invoque(){
-        return 'hola bienvenidos al curso de laravel';
+    public function __invoke(){
+        return  view('welcome')
     }
 }

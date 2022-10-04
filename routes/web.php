@@ -7,12 +7,10 @@ use  App\Http\Controllers\indexControler;
 
 
 
-Route::get('/', [indexController::class, ]);
+Route::get('/', IndexController::class);
 
 Route::get('/', function () {
     return'bienvenido mi primera aplicaion con larabel';
 });
 
-Route:: get('productos', function(){
-    return'Bienvenidio a la seccin de los productos';
-});
+Route:: get('productos',ProductoController::class,'index');
