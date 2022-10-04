@@ -15,6 +15,4 @@ Route:: get('productos', function(){
     return'Bienvenidio a la seccin de los productos';
 });
 
-Route::get('productos/{producto}', function ($producto) {
-    return "el producto seleccionado es $producto"
-});
+ 
